@@ -7,10 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Month extends Model
 {
-    public function months(){
+    public function month(){
 
         return $this->from('months')
-                    ->select('month','id')
                     ->orderBy('id')
                     ->get();
     }

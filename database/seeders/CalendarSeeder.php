@@ -16,226 +16,358 @@ class CalendarSeeder extends Seeder
     public function run()
     {
         DB::table('calendars')->insert([
-            'month'     => '1',
-            'dayweek'   => '0',
-            'day'       => '1',
-            'year'      => '2023'
+            'day'     => '1',
+            'month'   => '1',
+            'year'       => '2023',
         ]);
         DB::table('calendars')->insert([
-            'month'     => '1',
-            'dayweek'   => '0',
-            'day'       => '8',
-            'year'      => '2023'
+            'day'     => '2',
+            'month'   => '1',
+            'year'       => '2023',
         ]);
         DB::table('calendars')->insert([
-            'month'     => '1',
-            'dayweek'   => '0',
-            'day'       => '15',
-            'year'      => '2023'
+            'day'     => '3',
+            'month'   => '1',
+            'year'       => '2023',
         ]);
         DB::table('calendars')->insert([
-            'month'     => '1',
-            'dayweek'   => '0',
-            'day'       => '22',
-            'year'      => '2023'
+            'day'     => '4',
+            'month'   => '1',
+            'year'       => '2023',
         ]);
         DB::table('calendars')->insert([
-            'month'     => '1',
-            'dayweek'   => '0',
-            'day'       => '29',
-            'year'      => '2023'
-        ]);
-
-        /* week Two*/
-        DB::table('calendars')->insert([
-            'month'     => '1',
-            'dayweek'   => '1',
-            'day'       => '2',
-            'year'      => '2023'
+            'day'     => '5',
+            'month'   => '1',
+            'year'       => '2023',
         ]);
         DB::table('calendars')->insert([
-            'month'     => '1',
-            'dayweek'   => '1',
-            'day'       => '9',
-            'year'      => '2023'
+            'day'     => '6',
+            'month'   => '1',
+            'year'       => '2023',
         ]);
         DB::table('calendars')->insert([
-            'month'     => '1',
-            'dayweek'   => '1',
-            'day'       => '16',
-            'year'      => '2023'
+            'day'     => '7',
+            'month'   => '1',
+            'year'       => '2023',
         ]);
         DB::table('calendars')->insert([
-            'month'     => '1',
-            'dayweek'   => '1',
-            'day'       => '23',
-            'year'      => '2023'
+            'day'     => '8',
+            'month'   => '1',
+            'year'       => '2023',
         ]);
         DB::table('calendars')->insert([
-            'month'     => '1',
-            'dayweek'   => '1',
-            'day'       => '30',
-            'year'      => '2023'
-        ]);
-
-        /* week Tree*/
-        DB::table('calendars')->insert([
-            'month'     => '1',
-            'dayweek'   => '2',
-            'day'       => '3',
-            'year'      => '2023'
+            'day'     => '9',
+            'month'   => '1',
+            'year'       => '2023',
         ]);
         DB::table('calendars')->insert([
-            'month'     => '1',
-            'dayweek'   => '2',
-            'day'       => '10',
-            'year'      => '2023'
+            'day'     => '10',
+            'month'   => '1',
+            'year'       => '2023',
         ]);
         DB::table('calendars')->insert([
-            'month'     => '1',
-            'dayweek'   => '2',
-            'day'       => '17',
-            'year'      => '2023'
+            'day'     => '11',
+            'month'   => '1',
+            'year'       => '2023',
         ]);
         DB::table('calendars')->insert([
-            'month'     => '1',
-            'dayweek'   => '2',
-            'day'       => '24',
-            'year'      => '2023'
+            'day'     => '12',
+            'month'   => '1',
+            'year'       => '2023',
         ]);
         DB::table('calendars')->insert([
-            'month'     => '1',
-            'dayweek'   => '2',
-            'day'       => '31',
-            'year'      => '2023'
-        ]);
-
-        /* week For*/
-        DB::table('calendars')->insert([
-            'month'     => '1',
-            'dayweek'   => '3',
-            'day'       => '4',
-            'year'      => '2023'
+            'day'     => '13',
+            'month'   => '1',
+            'year'       => '2023',
         ]);
         DB::table('calendars')->insert([
-            'month'     => '1',
-            'dayweek'   => '3',
-            'day'       => '11',
-            'year'      => '2023'
+            'day'     => '14',
+            'month'   => '1',
+            'year'       => '2023',
         ]);
         DB::table('calendars')->insert([
-            'month'     => '1',
-            'dayweek'   => '3',
-            'day'       => '18',
-            'year'      => '2023'
+            'day'     => '15',
+            'month'   => '1',
+            'year'       => '2023',
         ]);
         DB::table('calendars')->insert([
-            'month'     => '1',
-            'dayweek'   => '3',
-            'day'       => '25',
-            'year'      => '2023'
+            'day'     => '16',
+            'month'   => '1',
+            'year'       => '2023',
         ]);
         DB::table('calendars')->insert([
-            'month'     => '1',
-            'dayweek'   => '3',
-            'day'       => '0',
-            'year'      => '2023'
-        ]);
-
-        /* week Five*/
-        DB::table('calendars')->insert([
-            'month'     => '1',
-            'dayweek'   => '4',
-            'day'       => '5',
-            'year'      => '2023'
+            'day'     => '17',
+            'month'   => '1',
+            'year'       => '2023',
         ]);
         DB::table('calendars')->insert([
-            'month'     => '1',
-            'dayweek'   => '4',
-            'day'       => '12',
-            'year'      => '2023'
+            'day'     => '18',
+            'month'   => '1',
+            'year'       => '2023',
         ]);
         DB::table('calendars')->insert([
-            'month'     => '1',
-            'dayweek'   => '4',
-            'day'       => '19',
-            'year'      => '2023'
+            'day'     => '19',
+            'month'   => '1',
+            'year'       => '2023',
         ]);
         DB::table('calendars')->insert([
-            'month'     => '1',
-            'dayweek'   => '4',
-            'day'       => '26',
-            'year'      => '2023'
+            'day'     => '20',
+            'month'   => '1',
+            'year'       => '2023',
         ]);
         DB::table('calendars')->insert([
-            'month'     => '1',
-            'dayweek'   => '4',
-            'day'       => '0',
-            'year'      => '2023'
-        ]);
-
-        /* week Six*/
-        DB::table('calendars')->insert([
-            'month'     => '1',
-            'dayweek'   => '5',
-            'day'       => '6',
-            'year'      => '2023'
+            'day'     => '21',
+            'month'   => '1',
+            'year'       => '2023',
         ]);
         DB::table('calendars')->insert([
-            'month'     => '1',
-            'dayweek'   => '5',
-            'day'       => '13',
-            'year'      => '2023'
+            'day'     => '22',
+            'month'   => '1',
+            'year'       => '2023',
         ]);
         DB::table('calendars')->insert([
-            'month'     => '1',
-            'dayweek'   => '5',
-            'day'       => '20',
-            'year'      => '2023'
+            'day'     => '23',
+            'month'   => '1',
+            'year'       => '2023',
         ]);
         DB::table('calendars')->insert([
-            'month'     => '1',
-            'dayweek'   => '5',
-            'day'       => '27',
-            'year'      => '2023'
+            'day'     => '24',
+            'month'   => '1',
+            'year'       => '2023',
         ]);
         DB::table('calendars')->insert([
-            'month'     => '1',
-            'dayweek'   => '5',
-            'day'       => '0',
-            'year'      => '2023'
+            'day'     => '25',
+            'month'   => '1',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '26',
+            'month'   => '1',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '27',
+            'month'   => '1',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '28',
+            'month'   => '1',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '29',
+            'month'   => '1',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '30',
+            'month'   => '1',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '31',
+            'month'   => '1',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '0',
+            'month'   => '1',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '0',
+            'month'   => '1',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '0',
+            'month'   => '1',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '0',
+            'month'   => '1',
+            'year'       => '2023',
         ]);
 
-        /* week Seven*/
+
+
+        /* Fer */
         DB::table('calendars')->insert([
-            'month'     => '1',
-            'dayweek'   => '6',
-            'day'       => '7',
-            'year'      => '2023'
+            'day'     => '0',
+            'month'   => '2',
+            'year'       => '2023',
         ]);
         DB::table('calendars')->insert([
-            'month'     => '1',
-            'dayweek'   => '6',
-            'day'       => '14',
-            'year'      => '2023'
+            'day'     => '0',
+            'month'   => '2',
+            'year'       => '2023',
         ]);
         DB::table('calendars')->insert([
-            'month'     => '1',
-            'dayweek'   => '6',
-            'day'       => '21',
-            'year'      => '2023'
+            'day'     => '0',
+            'month'   => '2',
+            'year'       => '2023',
         ]);
         DB::table('calendars')->insert([
-            'month'     => '1',
-            'dayweek'   => '6',
-            'day'       => '28',
-            'year'      => '2023'
+            'day'     => '1',
+            'month'   => '2',
+            'year'       => '2023',
         ]);
         DB::table('calendars')->insert([
-            'month'     => '1',
-            'dayweek'   => '6',
-            'day'       => '0',
-            'year'      => '2023'
+            'day'     => '2',
+            'month'   => '2',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '3',
+            'month'   => '2',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '4',
+            'month'   => '2',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '5',
+            'month'   => '2',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '6',
+            'month'   => '2',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '7',
+            'month'   => '2',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '8',
+            'month'   => '2',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '9',
+            'month'   => '2',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '10',
+            'month'   => '2',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '11',
+            'month'   => '2',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '12',
+            'month'   => '2',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '13',
+            'month'   => '2',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '14',
+            'month'   => '2',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '15',
+            'month'   => '2',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '16',
+            'month'   => '2',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '17',
+            'month'   => '2',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '18',
+            'month'   => '2',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '19',
+            'month'   => '2',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '20',
+            'month'   => '2',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '21',
+            'month'   => '2',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '22',
+            'month'   => '2',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '23',
+            'month'   => '2',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '24',
+            'month'   => '2',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '25',
+            'month'   => '2',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '26',
+            'month'   => '2',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '27',
+            'month'   => '2',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '28',
+            'month'   => '2',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '0',
+            'month'   => '2',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '0',
+            'month'   => '2',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '0',
+            'month'   => '2',
+            'year'       => '2023',
+        ]);
+        DB::table('calendars')->insert([
+            'day'     => '0',
+            'month'   => '2',
+            'year'       => '2023',
         ]);
     }
 }

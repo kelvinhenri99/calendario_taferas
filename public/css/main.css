@@ -1,0 +1,14 @@
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #e8e8e8;
+}
+
+h1 {
+    font-size: 37px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#titleOne {
+    color: #5474e8;
+}

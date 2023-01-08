@@ -13,9 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('months', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('month');
+        Schema::create('dayweeks', function (Blueprint $table) {
+            $table->id();
+            $table->string('dayweek');
             $table->timestamps();
         });
     }
@@ -27,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('months');
+        Schema::dropIfExists('dayweeks');
     }
 };
