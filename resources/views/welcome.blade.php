@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/welcome.css">
     <script src="../scripts/time.js" rel="text/javascript"></script>
+    <script src="../scripts/openDiv.js" rel="text/javascript"></script>
 </head>
 <body onload="time()">
     <div class="divWelcome">
@@ -76,125 +77,43 @@
         <h1 id="titleOne">Acesse o calendário 2023</h1>
 
         @auth
-
         <p id="titleTree">
             <span id="time"></span>
         </p>
-        
-            <div class="divGridCalendar">
-                @foreach ($months as $months)
-                    <div class="divMonths">
-                        <h1>{{$months->month}}</h1>
-                    </div>
+
+            <select class="selectMonth">
+                <option value="">Selecione o mês</option>
+                @foreach ($month as $month)
+                    <option id="{{$month->id}}">{{$month->month}}</option>
+                @endforeach
+            </select>
+
+            <div class="divCalendar" id="divOne">
+                <div class="titleGrid">Janeiro - 2023</div>
+                @foreach ($jan2023 as $jan)
+                    @if ($jan->day === 0)
+                        <div id="null"></div>
+                    @else
+                        <div>{{$jan->day}}</div>
+                    @endif
+                @endforeach
+                <div class="titleGrid">Fevereiro - 2023</div>
+                @foreach ($fer2023 as $fer)
+                    @if ($fer->day === 0)
+                        <div id="null"></div>
+                    @else
+                        <div>{{$fer->day}}</div>
+                    @endif
                 @endforeach
             </div>
 
-            <div class="divMonthsCalendar">
-                <table>
-                    <tr>
-                        <th>DOM</th>
-                        @foreach ($weekOn as $On)
-                            @if ($On->day === 0)
-                                <td></td>
-                            @else
-                                <td>{{$On->day}}</td>
-                            @endif
-                        @endforeach
-                    </tr>
-                    <tr>
-                        <th>SEG</th>
-                        @foreach ($weekTwo as $Two)
-                            @if ($Two->day === 0)
-                                <td></td>
-                            @else
-                                <td>{{$Two->day}}</td>
-                            @endif
-                        @endforeach
-                    </tr>
-                    <tr>
-                        <th>TER</th>
-                        @foreach ($weekTree as $Tree)
-                            @if ($Tree->day === 0)
-                                <td></td>
-                            @else
-                                <td>{{$Tree->day}}</td>
-                            @endif
-                        @endforeach
-                    </tr>
-                    <tr>
-                        <th>QUA</th>
-                        @foreach ($weekFor as $For)
-                            @if ($For->day === 0)
-                                <td></td>
-                            @else
-                                <td>{{$For->day}}</td>
-                            @endif
-                        @endforeach
-                    </tr>
-                    <tr>
-                        <th>QUI</th>
-                        @foreach ($weekFive as $Five)
-                            @if ($Five->day === 0)
-                                <td></td>
-                            @else
-                                <td>{{$Five->day}}</td>
-                            @endif
-                        @endforeach
-                    </tr>
-                    <tr>
-                        <th>SEX</th>
-                        @foreach ($weekSix as $Six)
-                            @if ($Six->day === 0)
-                                <td></td>
-                            @else
-                                <td>{{$Six->day}}</td>
-                            @endif
-                        @endforeach
-                    </tr>
-                    <tr>
-                        <th>SAB</th>
-                        @foreach ($weekSeven as $Seven)
-                            @if ($Seven->day === 0)
-                                <td></td>
-                            @else
-                                <td>{{$Seven->day}}</td>
-                            @endif
-                        @endforeach
-                    </tr>
-                </table>
-            </div>
         @endauth
-
     </div>
 
     <div>
-        @guest
-        <div class="divCalendarGuest">
-            <p>Faça o login para ter o acesso a essa parte do sistema!</p>
-        </div>
-        @endguest
-
-        <div class="divDivision"></div>
-
-        <h1 id="titleOne">Tarefas agendadas</h1>
-
         @auth
-            <div class="divTasksAuth">
-                <p>Ops!!! Não há nada por aqui...</p>
-            </div>
-        @endauth
-
-        @guest
-        <div class="divCalendarGuest">
-            <p>Faça o login para ter o acesso a essa parte do sistema!</p>
-        </div>
-        @endguest
-
-        <div class="divDivision"></div>
-
-        <h1 id="titleOne">Tarefas concluídas</h1>
-
-        @auth
+            <div class="divDivision"></div>
+            <h1 id="titleOne">Suas tarefas</h1>
             <div class="divTasksAuth">
                 <p>Ops!!! Não há nada por aqui...</p>
             </div>

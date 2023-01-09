@@ -64,29 +64,6 @@ h1 {
     margin-bottom: 50px;
 }
 
-.divMonths {
-    background-color: #5474e8;
-    width: 95%;
-    border-radius: 30px;
-    box-shadow: 0px 0px 20px #a5a5a5;
-    cursor: pointer;
-    transition: 0.7s;
-}
-
-.divMonths:hover h1{
-    color: yellow;
-}
-
-.divMonths:hover {
-    box-shadow: 0px 0px 20px #373737;
-}
-
-.divMonths h1 {
-    font-weight: normal;
-    background-color: transparent;
-    color: white;
-}
-
 .divGridLoginOrRegister {
     width: 800px;
     height: 530px;
@@ -153,16 +130,6 @@ h1 {
     color: yellow;
 }
 
-.divGridCalendar {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 30px 10px;
-    width: 1310px;
-    margin: 0 auto;
-    margin-bottom: 100px;
-    margin-top: 70px;
-}
-
 .divCalendarGuest {
     width: 1310px;
     margin: 0 auto;
@@ -213,19 +180,17 @@ h1 {
 }
 
 .divTasksAuth {
-    font-size: 25px;
     width: 1310px;
     margin: 0 auto;
     text-align: center;
     background-color: white;
     padding: 20px;
     margin-bottom: 100px;
-    box-shadow: 0px 0px 20px #a5a5a5;
-    border-radius: 20px;
 }
 
 .divTasksAuth p {
     background-color: transparent;
+    font-size: 25px;
 }
 
 #version {
@@ -263,7 +228,8 @@ h1 {
 
 .divMonthsCalendar table tr td {
     font-size: 25px;
-    width: 300px;
+    max-width: 160px;
+    min-width: 160px;
     color: #5474e8;
     text-align: center;
     font-weight: bolder;
@@ -271,6 +237,66 @@ h1 {
     background-color: white;
 }
 
-#today {
-    background-color: red;
+.divMonthsCalendar table tr td a {
+    text-decoration: none;
+    color: #5474e8;
+    padding: 8px 50px;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.divMonthsCalendar table tr td a:hover {
+    color: black;
+    font-size: 37px;
+}
+
+.divCalendar {
+    display: grid;
+    width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px 10px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.divCalendar div {
+    background-color: white;
+    width: 100%;
+    font-size: 25px;
+    padding: 15px 0px;
+    font-weight: bolder;
+    color: #5474e8;
+    border-radius: 7px;
+    transition: 0.5s;
+}
+
+.selectMonth {
+    width: 70%;
+    text-align: center;
+    background-color: white;
+    border: 0px;
+}
+
+.divCalendar div:hover {
+    cursor: pointer;
+    color: rgb(40,40,40);
+    box-shadow: 0px 0px 10px rgb(180, 180, 180);
+}
+
+.titleGrid {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    background-color: rgb(40,40,40)!important;
+    padding: 20px 0px!important;
+    font-size: 37px!important;
+    color: white!important;
+    border-color: rgb(40,40,40)!important;
+}
+
+#null {
+    background-color: rgb(207, 207, 207)!important;
+    border-color: rgb(207, 207, 207)!important;
+    box-shadow: none;
 }

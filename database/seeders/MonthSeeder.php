@@ -16,40 +16,40 @@ class MonthSeeder extends Seeder
     public function run()
     {
         DB::table('months')->insert([
-            'month'     => 'JAN',
+            'month'     => 'JANEIRO',
         ]);
         DB::table('months')->insert([
-            'month'     => 'FER',
+            'month'     => 'FEVEREIRO',
         ]);
         DB::table('months')->insert([
-            'month'     => 'MAR',
+            'month'     => 'MARÇO',
         ]);
         DB::table('months')->insert([
-            'month'     => 'ABR',
+            'month'     => 'ABRIL',
         ]);
         DB::table('months')->insert([
-            'month'     => 'MAI',
+            'month'     => 'MAIO',
         ]);
         DB::table('months')->insert([
-            'month'     => 'JUN',
+            'month'     => 'JUNHO',
         ]);
         DB::table('months')->insert([
-            'month'     => 'JUL',
+            'month'     => 'JULHO',
         ]);
         DB::table('months')->insert([
             'month'     => 'AGO',
         ]);
         DB::table('months')->insert([
-            'month'     => 'SET',
+            'month'     => 'SETEMBRO',
         ]);
         DB::table('months')->insert([
-            'month'     => 'OUT',
+            'month'     => 'OUTUBRO',
         ]);
         DB::table('months')->insert([
-            'month'     => 'NOV',
+            'month'     => 'NOVEMBRO',
         ]);
         DB::table('months')->insert([
-            'month'     => 'DEZ',
+            'month'     => 'DEZEMBRO',
         ]);
     }
 }

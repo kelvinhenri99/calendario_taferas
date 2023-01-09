@@ -3,9 +3,11 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\WelcomeController;
+use App\Http\Controllers\TasksController;
 
 Route::get('/', [WelcomeController::class, 'welcome']);
 Route::get('/dashboard', [WelcomeController::class, 'dashboard']);
+Route::get('/tasks', [TasksController::class, 'tasks']);
 
 Route::middleware([
     'auth:sanctum',
