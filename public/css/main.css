@@ -1,4 +1,4 @@
-* {
+body {
     font-family: 'Source Sans Pro', sans-serif;
     background-color: #e8e8e8;
 }
@@ -11,4 +11,53 @@ h1 {
 
 #titleOne {
     color: #5474e8;
+}
+
+.gridTasks {
+    width: 900px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px 0px;
+    text-align: center;
+    background-color: white;
+}
+
+.gridTasks div {
+    background-color: white;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.gridTasks div input, .gridTasks div select {
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid #5474e8;
+    font-size: 20px;
+    padding: 10px 0px;
+    margin-top: 10px;
+}
+
+.gridTasks input[type=submit] {
+    background-color: rgb(40,40,40);
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border: 0px;
+    border-radius: 20px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.gridTasks input[type=submit]:hover {
+    border-radius: 0px;
+}
+
+.avatar {
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: white;
 }

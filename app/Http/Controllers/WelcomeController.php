@@ -12,10 +12,11 @@ class WelcomeController extends Controller
 {
     public function welcome() {
 
-        $jan2023 = (new Calendar)->jan2023();
-        $fer2023 = (new Calendar)->fer2023();
-        $month   = (new Month)->month();
+        $jan2023    = (new Calendar)->jan2023();
+        $fer2023    = (new Calendar)->fer2023();
+        $month      = (new Month)->month();
+        $dayweek    = (new Calendar)->dayweek();
 
-        return view ('welcome', compact('jan2023','fer2023','month'));
+        return view ('welcome', compact('jan2023','fer2023','month','dayweek'));
     }
 }

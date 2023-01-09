@@ -1,4 +1,4 @@
-* {
+body {
     font-family: 'Source Sans Pro', sans-serif;
     background-color: #e8e8e8;
 }
@@ -184,13 +184,24 @@ h1 {
     margin: 0 auto;
     text-align: center;
     background-color: white;
-    padding: 20px;
+    padding: 20px 0px;
     margin-bottom: 100px;
 }
 
 .divTasksAuth p {
     background-color: transparent;
     font-size: 25px;
+}
+
+.divTasksAuth a {
+    text-decoration: none;
+    background-color: white;
+    color:#5474e8;
+    font-style: italic;
+}
+
+.divTasksAuth a:hover {
+    text-decoration: underline;
 }
 
 #version {
@@ -251,38 +262,54 @@ h1 {
 }
 
 .divCalendar {
-    display: grid;
     width: 900px;
     margin: 0 auto;
     text-align: center;
+}
+
+.gridCalendar {
+    width: 100%;
+    border-radius: 7px;
+    transition: 0.5s;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 10px 10px;
     margin-top: 90px;
     margin-bottom: 90px;
+    display: none;
 }
 
-.divCalendar div {
-    background-color: white;
-    width: 100%;
+.gridCalendar div {
     font-size: 25px;
     padding: 15px 0px;
     font-weight: bolder;
     color: #5474e8;
-    border-radius: 7px;
-    transition: 0.5s;
-}
-
-.selectMonth {
-    width: 70%;
-    text-align: center;
     background-color: white;
-    border: 0px;
 }
 
-.divCalendar div:hover {
+.gridCalendar div:hover {
     cursor: pointer;
     color: rgb(40,40,40);
     box-shadow: 0px 0px 10px rgb(180, 180, 180);
+}
+
+.selectMonth {
+    width: 100%;
+    margin: 0 auto!important;
+    text-align: center;
+    text-align-last: center;
+    background-color: rgb(40,40,40);
+    border: 0px;
+    font-size: 25px;
+    color: white;
+    padding: 10px 0px;
+}
+
+.selectMonth option {
+    font-size: 15px;
+    background-color: #5474e8;
+    color: white;
+    text-align: center;
+    text-align-last: center;
 }
 
 .titleGrid {
@@ -295,8 +322,14 @@ h1 {
     border-color: rgb(40,40,40)!important;
 }
 
+.dayweek {
+    background-color: rgb(40,40,40)!important;
+    color: white!important;
+}
+
 #null {
     background-color: rgb(207, 207, 207)!important;
     border-color: rgb(207, 207, 207)!important;
     box-shadow: none;
+    cursor: default!important;
 }

@@ -84,27 +84,167 @@
             <select class="selectMonth">
                 <option value="">Selecione o mês</option>
                 @foreach ($month as $month)
-                    <option id="{{$month->id}}">{{$month->month}}</option>
+                    <option onclick="openDiv{{$month->id}}()">{{$month->month}}</option>
                 @endforeach
             </select>
-
-            <div class="divCalendar" id="divOne">
-                <div class="titleGrid">Janeiro - 2023</div>
-                @foreach ($jan2023 as $jan)
-                    @if ($jan->day === 0)
-                        <div id="null"></div>
-                    @else
-                        <div>{{$jan->day}}</div>
-                    @endif
-                @endforeach
-                <div class="titleGrid">Fevereiro - 2023</div>
-                @foreach ($fer2023 as $fer)
-                    @if ($fer->day === 0)
-                        <div id="null"></div>
-                    @else
-                        <div>{{$fer->day}}</div>
-                    @endif
-                @endforeach
+ 
+            <div class="divCalendar">
+                <div id="1" class="gridCalendar">
+                    <div class="titleGrid">Janeiro - 2023</div>
+                    @foreach ($dayweek as $week)
+                        <div class="dayweek">{{$week->dayweek}}</div>
+                    @endforeach
+                    @foreach ($jan2023 as $jan)
+                        @if ($jan->day === 0)
+                            <div id="null"></div>
+                        @else
+                            <div>{{$jan->day}}</div>
+                        @endif
+                    @endforeach
+                </div>
+                <div id="2" class="gridCalendar">
+                    <div class="titleGrid">Fevereiro - 2023</div>
+                    @foreach ($dayweek as $week)
+                        <div class="dayweek">{{$week->dayweek}}</div>
+                    @endforeach
+                    @foreach ($fer2023 as $fer)
+                        @if ($fer->day === 0)
+                            <div id="null"></div>
+                        @else
+                            <div>{{$fer->day}}</div>
+                        @endif
+                    @endforeach
+                </div>
+                <div id="3" class="gridCalendar">
+                    <div class="titleGrid">Março - 2023</div>
+                    @foreach ($dayweek as $week)
+                        <div class="dayweek">{{$week->dayweek}}</div>
+                    @endforeach
+                    @foreach ($fer2023 as $fer)
+                        @if ($fer->day === 0)
+                            <div id="null"></div>
+                        @else
+                            <div>{{$fer->day}}</div>
+                        @endif
+                    @endforeach
+                </div>
+                <div id="4" class="gridCalendar">
+                    <div class="titleGrid">Abril - 2023</div>
+                    @foreach ($dayweek as $week)
+                        <div class="dayweek">{{$week->dayweek}}</div>
+                    @endforeach
+                    @foreach ($fer2023 as $fer)
+                        @if ($fer->day === 0)
+                            <div id="null"></div>
+                        @else
+                            <div>{{$fer->day}}</div>
+                        @endif
+                    @endforeach
+                </div>
+                <div id="5" class="gridCalendar">
+                    <div class="titleGrid">Maio - 2023</div>
+                    @foreach ($dayweek as $week)
+                        <div class="dayweek">{{$week->dayweek}}</div>
+                    @endforeach
+                    @foreach ($fer2023 as $fer)
+                        @if ($fer->day === 0)
+                            <div id="null"></div>
+                        @else
+                            <div>{{$fer->day}}</div>
+                        @endif
+                    @endforeach
+                </div>
+                <div id="6" class="gridCalendar">
+                    <div class="titleGrid">Junho - 2023</div>
+                    @foreach ($dayweek as $week)
+                        <div class="dayweek">{{$week->dayweek}}</div>
+                    @endforeach
+                    @foreach ($fer2023 as $fer)
+                        @if ($fer->day === 0)
+                            <div id="null"></div>
+                        @else
+                            <div>{{$fer->day}}</div>
+                        @endif
+                    @endforeach
+                </div>
+                <div id="7" class="gridCalendar">
+                    <div class="titleGrid">Julho - 2023</div>
+                    @foreach ($dayweek as $week)
+                        <div class="dayweek">{{$week->dayweek}}</div>
+                    @endforeach
+                    @foreach ($fer2023 as $fer)
+                        @if ($fer->day === 0)
+                            <div id="null"></div>
+                        @else
+                            <div>{{$fer->day}}</div>
+                        @endif
+                    @endforeach
+                </div>
+                <div id="8" class="gridCalendar">
+                    <div class="titleGrid">Agosto - 2023</div>
+                    @foreach ($dayweek as $week)
+                        <div class="dayweek">{{$week->dayweek}}</div>
+                    @endforeach
+                    @foreach ($fer2023 as $fer)
+                        @if ($fer->day === 0)
+                            <div id="null"></div>
+                        @else
+                            <div>{{$fer->day}}</div>
+                        @endif
+                    @endforeach
+                </div>
+                <div id="9" class="gridCalendar">
+                    <div class="titleGrid">Setembro - 2023</div>
+                    @foreach ($dayweek as $week)
+                        <div class="dayweek">{{$week->dayweek}}</div>
+                    @endforeach
+                    @foreach ($fer2023 as $fer)
+                        @if ($fer->day === 0)
+                            <div id="null"></div>
+                        @else
+                            <div>{{$fer->day}}</div>
+                        @endif
+                    @endforeach
+                </div>
+                <div id="10" class="gridCalendar">
+                    <div class="titleGrid">Outubro - 2023</div>
+                    @foreach ($dayweek as $week)
+                        <div class="dayweek">{{$week->dayweek}}</div>
+                    @endforeach
+                    @foreach ($fer2023 as $fer)
+                        @if ($fer->day === 0)
+                            <div id="null"></div>
+                        @else
+                            <div>{{$fer->day}}</div>
+                        @endif
+                    @endforeach
+                </div>
+                <div id="11" class="gridCalendar">
+                    <div class="titleGrid">Novembro - 2023</div>
+                    @foreach ($dayweek as $week)
+                        <div class="dayweek">{{$week->dayweek}}</div>
+                    @endforeach
+                    @foreach ($fer2023 as $fer)
+                        @if ($fer->day === 0)
+                            <div id="null"></div>
+                        @else
+                            <div>{{$fer->day}}</div>
+                        @endif
+                    @endforeach
+                </div>
+                <div id="12" class="gridCalendar">
+                    <div class="titleGrid">Dezembro - 2023</div>
+                    @foreach ($dayweek as $week)
+                        <div class="dayweek">{{$week->dayweek}}</div>
+                    @endforeach
+                    @foreach ($fer2023 as $fer)
+                        @if ($fer->day === 0)
+                            <div id="null"></div>
+                        @else
+                            <div>{{$fer->day}}</div>
+                        @endif
+                    @endforeach
+                </div>
             </div>
 
         @endauth
@@ -113,9 +253,10 @@
     <div>
         @auth
             <div class="divDivision"></div>
-            <h1 id="titleOne">Suas tarefas</h1>
+            <h1 id="titleOne">Acesse a sua agenda Virtual</h1>
             <div class="divTasksAuth">
-                <p>Ops!!! Não há nada por aqui...</p>
+                <p>Nenhuma tarefa cadastrada.<br><a href="/tasks">crie agora</a>
+                </p>
             </div>
         @endauth
 

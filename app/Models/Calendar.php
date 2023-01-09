@@ -7,6 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Calendar extends Model
 {
+    public function dayweek(){
+
+        return $this->from('dayweeks')
+                    ->orderBy('id')
+                    ->get();
+    }
+
     public function jan2023(){
 
         return $this->from('calendars')
