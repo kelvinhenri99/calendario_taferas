@@ -61,3 +61,30 @@ h1 {
     background-size: cover;
     background-color: white;
 }
+
+.alert {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #2a6f0e;
+    color: white;
+    top: 0px;
+    left: 0px;
+    padding: 20px 0px;
+    font-size: 25px;
+    text-align: center;
+    box-shadow: 0px 0px 30px black;
+}
+
+.comeBack {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.comeBack a {
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(40,40,40);
+}

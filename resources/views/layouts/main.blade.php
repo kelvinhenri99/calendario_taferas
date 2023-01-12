@@ -9,8 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="../scripts/modal.js" rel="text/javascript"></script>
 </head>
 <body>
+    <div class="comeBack">
+        <a href="javascript:history.back()">Voltar página</a>
+    </div>
     @yield('content')
 </body>
 </html>

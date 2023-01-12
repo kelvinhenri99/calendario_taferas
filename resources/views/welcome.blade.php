@@ -253,10 +253,27 @@
     <div>
         @auth
             <div class="divDivision"></div>
-            <h1 id="titleOne">Acesse a sua agenda Virtual</h1>
+            <h1 id="titleOne">Agenda virtual</h1>
             <div class="divTasksAuth">
-                <p>Nenhuma tarefa cadastrada.<br><a href="/tasks">crie agora</a>
-                </p>
+                @if($tasksLimit->isEmpty())
+                    <p>Nenhuma tarefa cadastrada. <a href="/tasks">Crie tarefa</a></p>
+                @else
+                    <p>Veja as suas próximas tarefas</p>
+                    @foreach ($tasksLimit as $task)
+                        <div class="divTask" style="background-color:{{$task->bg_color}}; border-color: {{$task->border_color}};">
+                            <img src="{{$task->icon}}" alt="icon">
+                            <h1 style="border-color: {{$task->border_color}};">{{$task->task}}</h1>
+                            <p style="background-color:{{$task->bg_color}}; border-color: {{$task->border_color}};">{{$task->date}}</p>
+                            <p style="background-color:{{$task->bg_color}}; border-color: {{$task->border_color}};">{{$task->status}}</p>
+                            <p id="date">
+                                Criado em: {{$task->created_at}} <br>
+                                Ultima atualização: {{$task->updated_at}}
+                            </p>
+                            <p id="edit" style="background-color: {{$task->border_color}};"><a href="">Editar tarefa</a></p>
+                        </div>
+                    @endforeach
+                    <p>Veja <a href="/tasks/all">aqui</a> todas suas tarefas ou <a href="/tasks">crie agora</a>.</p>
+                @endif
             </div>
         @endauth
 
